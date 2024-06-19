@@ -15,13 +15,18 @@
 }
 
 @font-face {
+  font-family: alegreyaSansItalic;
+  src: url("../font/AlegreyaSans-Italic.ttf");
+}
+
+@font-face {
   font-family: teX;
   src: url("../font/texgyreheros-regular.otf");
 }
 
 @font-face {
-    font-family: alegreyaSansItalic;
-    src: url("../font/AlegreyaSans-Italic.ttf");
+  font-family: teXBold;
+  src: url("../font/texgyreheroscn-bold.otf");
 }
 
 * {
@@ -50,6 +55,7 @@ header {
   display: grid;
   grid-template-rows: min-content auto;
   font-family: alegreyaSC, Arial, Helvetica, sans-serif;
+  background-attachment: fixed;
 }
 
 nav {
@@ -91,25 +97,26 @@ header p {
 /* ! main */
 /* - Our Latest Works */
 
-.works_bolg {
+.works_blog {
   padding: 60px 140px 0 140px;
   font-family: teX, Arial, Helvetica, sans-serif;
   color: rgba(58, 79, 82, 1);
+  margin-bottom: 80px;
 }
 
-.works_bolg > article {
+.works_blog > article {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 60px;
 }
 
-.works_bolg h2 {
+.works_blog h2 {
   font-family: alegreyaSans;
   font-size: 3.6rem;
 }
 
-.works_bolg p {
+.works_blog p {
   font-size: 1.4rem;
   color: rgba(106, 106, 106, 1);
 }
@@ -128,7 +135,7 @@ header p {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 30px;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 }
 
 .imgs_grid img {
@@ -146,6 +153,7 @@ header p {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+  background-attachment: fixed;
   text-align: center;
 
   display: flex;
@@ -169,7 +177,7 @@ header p {
   justify-content: space-evenly;
 }
 
-.container section h3 {
+.container h3 {
   font-family: alegreyaSans;
   font-size: 3.6rem;
 }
@@ -179,7 +187,7 @@ header p {
   font-size: 1.4rem;
 }
 
-.services h4 {
+.container h4 {
   font-family: alegreyaSans;
   font-size: 3rem;
 }
@@ -200,28 +208,84 @@ header p {
 /* - from the Blog */
 
 .blogs {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 .blogs img {
-    width: 100%;
+  width: 100%;
 }
 
 .blogs h5 {
-    font-family: alegreyaSans;
-    font-size: 3rem;
+  font-family: alegreyaSans;
+  font-size: 3rem;
 }
 
 .blogs span {
-    font-family: alegreyaSansItalic;
+  font-family: alegreyaSansItalic;
 }
 
 .blogs article {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
 
+.blogs a {
+  text-decoration: none;
+  color: rgba(77, 167, 202, 1);
+}
 
+/* - get a free quote section */
+
+.free_quote {
+  background-image: url(../img/testimonials_lampe.png);
+}
+
+.free_quote .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  border: 1px solid white;
+  text-decoration: none;
+  color: white;
+  padding: 12px 17px;
+  font-size: 1.8rem;
+}
+
+/* - testimonials */
+
+.testimonials > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.testimonials section div {
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+}
+
+.testimonials img {
+  border-radius: 50%;
+  object-position: center;
+  object-fit: cover;
+  height: 100%;
+}
+
+.testimonials {
+  text-align: center;
+}
+
+.testimonials span {
+    font-family: teXBold, Arial, Helvetica, sans-serif;
+}
