@@ -1,0 +1,227 @@
+/* ! basic */
+
+@font-face {
+  font-family: nixie;
+  src: url("../font/NixieOne-Regular.ttf");
+}
+@font-face {
+  font-family: alegreyaSC;
+  src: url("../font/AlegreyaSC-Regular.ttf");
+}
+
+@font-face {
+  font-family: alegreyaSans;
+  src: url("../font/AlegreyaSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: teX;
+  src: url("../font/texgyreheros-regular.otf");
+}
+
+@font-face {
+    font-family: alegreyaSansItalic;
+    src: url("../font/AlegreyaSans-Italic.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ! Header */
+
+header {
+  background-image: url("../img/header.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: grid;
+  grid-template-rows: min-content auto;
+  font-family: alegreyaSC, Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 30px 0 30px;
+}
+
+nav h2 {
+  font-size: 3.2rem;
+}
+
+.burger div {
+  background-color: white;
+  height: 4px;
+  width: 20px;
+  margin: 3px;
+  border-radius: 20px;
+}
+
+header article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  font-family: nixie;
+  font-size: 5.6rem;
+}
+
+header p {
+  font-size: 2.2rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ! main */
+/* - Our Latest Works */
+
+.works_bolg {
+  padding: 60px 140px 0 140px;
+  font-family: teX, Arial, Helvetica, sans-serif;
+  color: rgba(58, 79, 82, 1);
+}
+
+.works_bolg > article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.works_bolg h2 {
+  font-family: alegreyaSans;
+  font-size: 3.6rem;
+}
+
+.works_bolg p {
+  font-size: 1.4rem;
+  color: rgba(106, 106, 106, 1);
+}
+
+.viewBtn {
+  align-self: flex-start;
+  border: 1px solid rgba(58, 79, 82, 1);
+  text-decoration: none;
+  color: rgba(58, 79, 82, 1);
+  padding: 12px 17px;
+  font-size: 1.8rem;
+}
+
+.imgs_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.imgs_grid img {
+  object-fit: cover;
+  height: 30vh;
+  width: 100%;
+  object-position: center;
+}
+
+/* - Our Services */
+
+.our_services_section {
+  background-image: url("../img/our_services_chair.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  margin: 80px 130px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: grid;
+  gap: 20px;
+  grid-template-rows: 1fr 3fr;
+  justify-content: center;
+}
+
+.container section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.container section h3 {
+  font-family: alegreyaSans;
+  font-size: 3.6rem;
+}
+
+.our_services_section p {
+  font-family: teX;
+  font-size: 1.4rem;
+}
+
+.services h4 {
+  font-family: alegreyaSans;
+  font-size: 3rem;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 50px;
+}
+
+.services article {
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+}
+
+/* - from the Blog */
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.blogs img {
+    width: 100%;
+}
+
+.blogs h5 {
+    font-family: alegreyaSans;
+    font-size: 3rem;
+}
+
+.blogs span {
+    font-family: alegreyaSansItalic;
+}
+
+.blogs article {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
