@@ -135,14 +135,57 @@ header p {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 30px;
-  /* margin-bottom: 80px; */
 }
 
 .imgs_grid img {
   object-fit: cover;
-  height: 30vh;
+  height: 100%;
   width: 100%;
   object-position: center;
+  transition: all 1s linear;
+}
+
+.imgs_grid div img:hover {
+  transform: scale(2.5);
+  opacity: 50%;
+}
+
+.imgs_grid div {
+  overflow: hidden;
+  height: 30vh;
+  position: relative;
+}
+
+.imgs_grid div:hover {
+  background-color: rgb(4, 90, 101);
+}
+
+.imgs_grid div:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #008cba;
+  z-index: 3;
+}
+
+.link_on_image {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -600%);
+  text-align: center;
 }
 
 /* - Our Services */
@@ -214,6 +257,7 @@ header p {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  text-align: left;
 }
 
 .blogs img {
@@ -234,6 +278,7 @@ header p {
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  align-items: flex-start;
 }
 
 .blogs a {
@@ -290,6 +335,10 @@ header p {
   text-align: center;
 }
 
+.testimonials .blogs article {
+  align-items: center;
+}
+
 .testimonials span {
   font-family: teXBold, Arial, Helvetica, sans-serif;
 }
@@ -312,19 +361,18 @@ textarea {
 }
 
 textarea {
-    height: 15vh;
+  height: 15vh;
 }
 
 input::placeholder,
 textarea::placeholder {
   color: white;
   font-family: teX;
-
 }
 
 input:focus-visible,
 textarea:focus-visible {
-    outline: none;
+  outline: none;
 }
 
 textarea {
@@ -332,18 +380,18 @@ textarea {
 }
 
 .form {
-display: grid;
-gap: 10px;
+  display: grid;
+  gap: 10px;
 }
 
 /* - footer */
 
 footer {
-    background-color: rgba(43, 62, 81, 1);
-    font-size: 1.4rem;
-    color: white;
-    height: 20vh;
-    padding-left: 150px;
-    display: flex;
-    align-items: center;
+  background-color: rgba(43, 62, 81, 1);
+  font-size: 1.4rem;
+  color: white;
+  height: 20vh;
+  padding-left: 150px;
+  display: flex;
+  align-items: center;
 }
