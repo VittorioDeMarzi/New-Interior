@@ -111,7 +111,7 @@ header p {
   margin-bottom: 60px;
 }
 
-.works_blog h2 {
+.works_blog h3 {
   font-family: alegreyaSans;
   font-size: 3.6rem;
 }
@@ -162,6 +162,7 @@ header p {
 }
 
 .container {
+  width: 85%;
   margin: 80px 130px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.2);
@@ -169,6 +170,8 @@ header p {
   gap: 20px;
   grid-template-rows: 1fr 3fr;
   justify-content: center;
+  text-align: center;
+  justify-items: center;
 }
 
 .container section {
@@ -217,7 +220,7 @@ header p {
   width: 100%;
 }
 
-.blogs h5 {
+.blogs h4 {
   font-family: alegreyaSans;
   font-size: 3rem;
 }
@@ -252,6 +255,7 @@ header p {
 }
 
 .btn {
+  font-family: teX;
   border: 1px solid white;
   text-decoration: none;
   color: white;
@@ -287,5 +291,59 @@ header p {
 }
 
 .testimonials span {
-    font-family: teXBold, Arial, Helvetica, sans-serif;
+  font-family: teXBold, Arial, Helvetica, sans-serif;
+}
+
+/* - contact us */
+
+.contactUs {
+  background-image: url("../img/bedroom.png");
+}
+
+input,
+textarea {
+  background-color: transparent;
+  color: white;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+  width: 40vw;
+  resize: none;
+}
+
+textarea {
+    height: 15vh;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: white;
+  font-family: teX;
+
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    outline: none;
+}
+
+textarea {
+  background-color: transparent;
+}
+
+.form {
+display: grid;
+gap: 10px;
+}
+
+/* - footer */
+
+footer {
+    background-color: rgba(43, 62, 81, 1);
+    font-size: 1.4rem;
+    color: white;
+    height: 20vh;
+    padding-left: 150px;
+    display: flex;
+    align-items: center;
 }
