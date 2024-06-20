@@ -130,14 +130,12 @@ padding: 0 10px;
     z-index: 0;
   }
 
-  .link_on_image a {
-    z-index: 2;
+  .middle {
     opacity: 1;
   }
 
-  .imgs_grid div {
-    height: 25vh;
-    background-color: rgba(4, 90, 101, 1);
+  .img_container {
+    background-color: rgba(4, 90, 101, 0.5);
   }
 
   .imgs_grid div:hover {
@@ -145,8 +143,7 @@ padding: 0 10px;
   }
 
   .imgs_grid div:hover img {
-    transform: scale(1.5);
-    opacity: 0.8;
+    transform: scale(1);
   }
 
   /* - Our Services */

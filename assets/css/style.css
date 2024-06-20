@@ -292,7 +292,6 @@ header article {
 .blogs article {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 15px;
   align-items: flex-start;
 }
@@ -359,6 +358,7 @@ header article {
 
 .testimonials .blogs article {
   align-items: center;
+  text-align: center;
 }
 
 .testimonials span {
