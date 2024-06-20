@@ -47,7 +47,6 @@
 
   .free_quote .container h4 {
     font-size: 3.6rem;
- 
   }
 
   .free_quote .container {
@@ -85,8 +84,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-
-
   /* ! header */
 
   h1 {
@@ -100,6 +97,14 @@
   /* ! main */
   /* - Our Latest Works */
 
+  .viewBtn {
+    font-size: 1.4rem;
+    flex-basis: 40%;
+  }
+
+  .works_blog > article {
+    gap: 20px;
+  }
   .imgs_grid {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -132,13 +137,13 @@
 
   /* - Our Services */
 
-  .our_services_section  .container {
+  .our_services_section .container {
     padding: 0 40px 50px 40px;
   }
 
-  .our_services_section  .container section {
+  .our_services_section .container section {
     justify-content: center;
-    gap: 20px
+    gap: 20px;
   }
 
   /* - from the Blog */
@@ -156,7 +161,7 @@
   .free_quote .container {
     padding: 30px 20px 50px 20px;
   }
-  
+
   /* - contact us */
 
   .contactUs .container {
@@ -174,5 +179,4 @@
     height: 15vh;
     padding-left: 30px;
   }
-
 }
