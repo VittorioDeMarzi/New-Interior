@@ -103,7 +103,12 @@
   }
 
   .works_blog > article {
-    gap: 20px;
+    gap: 10px;
+  }
+
+  .works_blog h3 {
+    line-height: 3rem;
+    margin-bottom: 2rem;
   }
   .imgs_grid {
     grid-template-columns: 1fr;
