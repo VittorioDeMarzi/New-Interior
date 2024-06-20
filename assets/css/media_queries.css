@@ -1,0 +1,83 @@
+@media only screen and (max-width: 992px) {
+  /* ! header */
+
+  h1 {
+    font-size: 7.5rem;
+  }
+
+  header article {
+    margin-top: -70px;
+  }
+
+  header p {
+    font-size: 3rem;
+  }
+
+  /* ! main */
+  /* - Our Latest Works */
+
+  .works_blog {
+    padding: 40px 20px 0 20px;
+
+    margin-bottom: 80px;
+  }
+
+  .imgs_grid {
+    gap: 20px;
+  }
+
+  .imgs_grid div {
+    height: 17vh;
+  }
+
+  /* - Our Services */
+
+  .container {
+    width: auto;
+    margin: 70px 20px;
+    grid-template-rows: 1fr 4fr;
+    padding-bottom: 50px;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  /* - get a free quote section */
+
+  .free_quote .container h4 {
+    font-size: 3.8rem;
+  }
+
+  /* - testimonials */
+
+  .testimonials .blogs {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 0 40px;
+  }
+
+  /* - contact us */
+  .contactUs .container {
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    width: 60vw;
+  }
+
+  textarea {
+    height: 10vh;
+  }
+
+  /* ! footer */
+
+  footer {
+    font-size: 1.4rem;
+    height: 15vh;
+    padding-left: 70px;
+    display: flex;
+    align-items: center;
+  }
+}
