@@ -26,12 +26,28 @@
     gap: 20px;
   }
 
-  .imgs_grid div {
+  .img_container {
+    background-color: rgba(4, 90, 101, 1);
     height: 17vh;
   }
 
   .middle {
     transform: translate(-50%, 0%);
+    opacity: 1;
+  }
+
+  .imgs_grid img {
+    transition: all 0.5s linear;
+    opacity: 0.7;
+  }
+
+  .img_container:hover {
+    background-color: none;
+  }
+
+  .imgs_grid div:hover img {
+    transform: scale(1.2);
+    opacity: 0.7;
   }
 
   /* - Our Services */
@@ -124,27 +140,28 @@ padding: 0 10px;
     grid-template-rows: auto;
   }
 
-  .imgs_grid img {
+  /* .imgs_grid img {
     transition: all 0.5s linear;
     opacity: 0.5;
-    z-index: 0;
   }
-
+  
   .middle {
     opacity: 1;
-  }
-
+  } */
+  
   .img_container {
-    background-color: rgba(4, 90, 101, 0.5);
+    /* background-color: rgba(4, 90, 101, 1); */
+    height: 22vh;
+
   }
 
-  .imgs_grid div:hover {
+  /* .imgs_grid div:hover {
     background-color: none;
   }
 
   .imgs_grid div:hover img {
     transform: scale(1);
-  }
+  } */
 
   /* - Our Services */
 
