@@ -165,7 +165,7 @@ header p {
 }
 
 .imgs_grid div:hover {
-    background-color: rgb(4, 90, 101);
+    background-color: rgba(4, 90, 101, 0.9);
 }
 
 .imgs_grid div:hover .overlay {
@@ -292,6 +292,7 @@ header p {
 .blogs a {
   text-decoration: none;
   color: rgba(77, 167, 202, 1);
+  font-size: 1.4rem;
 }
 
 /* - get a free quote section */
