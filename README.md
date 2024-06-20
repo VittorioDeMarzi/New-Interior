@@ -1,5 +1,35 @@
 # New Interior
 
+[Visit the project](https://vittoriodemarzi.github.io/New-Interior/)
+
+## Overview
+
+**New Interior** is a website that presents innovative approaches in the field of interior design. The focus is on modern design and ease of use. The site offers intuitive navigation and appealing visual elements to provide the user with an optimal experience.
+
+## Page Structure
+
+The website is divided into several sections:
+
+- **Home:** An overview of the main content and the latest posts.
+- **Gallery:** A collection of images and design ideas for various living spaces.
+- **Articles:** Detailed posts with tips, trends, and guides on interior design.
+- **Contact:** A form for user inquiries and feedback.
+
+## Technologies
+
+- **HTML5:** To create the semantic structure of the site.
+- **CSS3:** For design and layout, including responsive design techniques.
+
+## Features
+
+1. **Responsive Design:** The site automatically adapts to different screen sizes to ensure an optimal user experience on desktops, tablets, and mobile devices.
+2. **Intuitive Navigation:** Clear and simple navigation structure to make it easy for users to find content.
+3. **Visual Design:** Use of CSS3 for advanced layouts, animations, and visual effects.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+# New Interior
+
 [Besuche das Projekt](https://vittoriodemarzi.github.io/New-Interior/)
 
 ## Überblick
